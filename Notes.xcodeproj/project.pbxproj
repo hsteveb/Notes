@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B111A35325CD01B6005DCA47 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111A35225CD01B6005DCA47 /* Account.swift */; };
+		B111A35825CD01E2005DCA47 /* EmailAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111A35725CD01E2005DCA47 /* EmailAccount.swift */; };
+		B111A35D25CD0227005DCA47 /* AppleAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111A35C25CD0227005DCA47 /* AppleAccount.swift */; };
+		B111A36225CD0286005DCA47 /* FacebookAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111A36125CD0286005DCA47 /* FacebookAccount.swift */; };
+		B1326A212592AECC009FAC17 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1326A202592AECC009FAC17 /* NotesApp.swift */; };
+		B1326A232592AECC009FAC17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1326A222592AECC009FAC17 /* ContentView.swift */; };
+		B1326A252592AECF009FAC17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1326A242592AECF009FAC17 /* Assets.xcassets */; };
+		B1326A282592AECF009FAC17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1326A272592AECF009FAC17 /* Preview Assets.xcassets */; };
+		B1326A2A2592AECF009FAC17 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1326A292592AECF009FAC17 /* Persistence.swift */; };
+		B1326A2D2592AECF009FAC17 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1326A2B2592AECF009FAC17 /* Notes.xcdatamodeld */; };
+		B1326A382592AECF009FAC17 /* NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1326A372592AECF009FAC17 /* NotesTests.swift */; };
+		B1326A432592AECF009FAC17 /* NotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1326A422592AECF009FAC17 /* NotesUITests.swift */; };
+		B146A7CB25A4D43800DD0820 /* EmailAccountCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B146A7CA25A4D43800DD0820 /* EmailAccountCreationView.swift */; };
+		B146A7D025A4D46100DD0820 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B146A7CF25A4D46100DD0820 /* HeaderView.swift */; };
+		B146A7D525A4F50A00DD0820 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B146A7D425A4F50A00DD0820 /* MainView.swift */; };
+		B14BACA225AF68FF00EE237E /* TextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14BACA125AF68FF00EE237E /* TextViewExtension.swift */; };
+		B14BACB525AF84AB00EE237E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14BACB425AF84AA00EE237E /* CustomTextField.swift */; };
+		B16AFF302673B84400EF3038 /* LoginButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AFF2F2673B84400EF3038 /* LoginButtons.swift */; };
+		B1C97CA425C7A8A800E585EB /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C97CA325C7A8A800E585EB /* ViewExtension.swift */; };
+		B1D424472672C07F0016CDF1 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = B1D424462672C07F0016CDF1 /* FacebookLogin */; };
+		B1EF72C125BFB1980086CC17 /* SwiftUIResponderListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EF72C025BFB1980086CC17 /* SwiftUIResponderListener.swift */; };
+		B1FEA9F425A3F84300974997 /* EmailLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FEA9F325A3F84300974997 /* EmailLoginView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1326A342592AECF009FAC17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1326A152592AECC009FAC17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1326A1C2592AECC009FAC17;
+			remoteInfo = Notes;
+		};
+		B1326A3F2592AECF009FAC17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1326A152592AECC009FAC17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1326A1C2592AECC009FAC17;
+			remoteInfo = Notes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B111A35225CD01B6005DCA47 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		B111A35725CD01E2005DCA47 /* EmailAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAccount.swift; sourceTree = "<group>"; };
+		B111A35C25CD0227005DCA47 /* AppleAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccount.swift; sourceTree = "<group>"; };
+		B111A36125CD0286005DCA47 /* FacebookAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookAccount.swift; sourceTree = "<group>"; };
+		B1326A1D2592AECC009FAC17 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1326A202592AECC009FAC17 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
+		B1326A222592AECC009FAC17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B1326A242592AECF009FAC17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1326A272592AECF009FAC17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1326A292592AECF009FAC17 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		B1326A2C2592AECF009FAC17 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
+		B1326A2E2592AECF009FAC17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1326A332592AECF009FAC17 /* NotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1326A372592AECF009FAC17 /* NotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTests.swift; sourceTree = "<group>"; };
+		B1326A392592AECF009FAC17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1326A3E2592AECF009FAC17 /* NotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1326A422592AECF009FAC17 /* NotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesUITests.swift; sourceTree = "<group>"; };
+		B1326A442592AECF009FAC17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B146A7CA25A4D43800DD0820 /* EmailAccountCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAccountCreationView.swift; sourceTree = "<group>"; };
+		B146A7CF25A4D46100DD0820 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		B146A7D425A4F50A00DD0820 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B14BACA125AF68FF00EE237E /* TextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewExtension.swift; sourceTree = "<group>"; };
+		B14BACB425AF84AA00EE237E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		B16AFF2F2673B84400EF3038 /* LoginButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtons.swift; sourceTree = "<group>"; };
+		B1C97CA325C7A8A800E585EB /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		B1E22CE3259ED5B600DB2C12 /* Notes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notes.entitlements; sourceTree = "<group>"; };
+		B1EF72C025BFB1980086CC17 /* SwiftUIResponderListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIResponderListener.swift; sourceTree = "<group>"; };
+		B1FEA9F325A3F84300974997 /* EmailLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1326A1A2592AECC009FAC17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D424472672C07F0016CDF1 /* FacebookLogin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1326A302592AECF009FAC17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1326A3B2592AECF009FAC17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B111A35125CD018C005DCA47 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B111A35225CD01B6005DCA47 /* Account.swift */,
+				B111A35725CD01E2005DCA47 /* EmailAccount.swift */,
+				B111A35C25CD0227005DCA47 /* AppleAccount.swift */,
+				B111A36125CD0286005DCA47 /* FacebookAccount.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B1326A142592AECC009FAC17 = {
+			isa = PBXGroup;
+			children = (
+				B1326A1F2592AECC009FAC17 /* Notes */,
+				B1326A362592AECF009FAC17 /* NotesTests */,
+				B1326A412592AECF009FAC17 /* NotesUITests */,
+				B1326A1E2592AECC009FAC17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1326A1E2592AECC009FAC17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1326A1D2592AECC009FAC17 /* Notes.app */,
+				B1326A332592AECF009FAC17 /* NotesTests.xctest */,
+				B1326A3E2592AECF009FAC17 /* NotesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1326A1F2592AECC009FAC17 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				B111A35125CD018C005DCA47 /* Login */,
+				B14BACA925AF6E2D00EE237E /* CustomViews */,
+				B14BACA025AF68EC00EE237E /* Extensions */,
+				B1E22CE3259ED5B600DB2C12 /* Notes.entitlements */,
+				B1326A202592AECC009FAC17 /* NotesApp.swift */,
+				B1326A222592AECC009FAC17 /* ContentView.swift */,
+				B1326A242592AECF009FAC17 /* Assets.xcassets */,
+				B1326A292592AECF009FAC17 /* Persistence.swift */,
+				B1326A2E2592AECF009FAC17 /* Info.plist */,
+				B1326A2B2592AECF009FAC17 /* Notes.xcdatamodeld */,
+				B1326A262592AECF009FAC17 /* Preview Content */,
+				B1FEA9F325A3F84300974997 /* EmailLoginView.swift */,
+				B146A7CA25A4D43800DD0820 /* EmailAccountCreationView.swift */,
+				B1EF72C025BFB1980086CC17 /* SwiftUIResponderListener.swift */,
+				B146A7CF25A4D46100DD0820 /* HeaderView.swift */,
+				B146A7D425A4F50A00DD0820 /* MainView.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		B1326A262592AECF009FAC17 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B1326A272592AECF009FAC17 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B1326A362592AECF009FAC17 /* NotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1326A372592AECF009FAC17 /* NotesTests.swift */,
+				B1326A392592AECF009FAC17 /* Info.plist */,
+			);
+			path = NotesTests;
+			sourceTree = "<group>";
+		};
+		B1326A412592AECF009FAC17 /* NotesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1326A422592AECF009FAC17 /* NotesUITests.swift */,
+				B1326A442592AECF009FAC17 /* Info.plist */,
+			);
+			path = NotesUITests;
+			sourceTree = "<group>";
+		};
+		B14BACA025AF68EC00EE237E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B14BACA125AF68FF00EE237E /* TextViewExtension.swift */,
+				B1C97CA325C7A8A800E585EB /* ViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B14BACA925AF6E2D00EE237E /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				B14BACB425AF84AA00EE237E /* CustomTextField.swift */,
+				B16AFF2F2673B84400EF3038 /* LoginButtons.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1326A1C2592AECC009FAC17 /* Notes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1326A472592AECF009FAC17 /* Build configuration list for PBXNativeTarget "Notes" */;
+			buildPhases = (
+				B1326A192592AECC009FAC17 /* Sources */,
+				B1326A1A2592AECC009FAC17 /* Frameworks */,
+				B1326A1B2592AECC009FAC17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Notes;
+			packageProductDependencies = (
+				B1D424462672C07F0016CDF1 /* FacebookLogin */,
+			);
+			productName = Notes;
+			productReference = B1326A1D2592AECC009FAC17 /* Notes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1326A322592AECF009FAC17 /* NotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1326A4A2592AECF009FAC17 /* Build configuration list for PBXNativeTarget "NotesTests" */;
+			buildPhases = (
+				B1326A2F2592AECF009FAC17 /* Sources */,
+				B1326A302592AECF009FAC17 /* Frameworks */,
+				B1326A312592AECF009FAC17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1326A352592AECF009FAC17 /* PBXTargetDependency */,
+			);
+			name = NotesTests;
+			productName = NotesTests;
+			productReference = B1326A332592AECF009FAC17 /* NotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1326A3D2592AECF009FAC17 /* NotesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1326A4D2592AECF009FAC17 /* Build configuration list for PBXNativeTarget "NotesUITests" */;
+			buildPhases = (
+				B1326A3A2592AECF009FAC17 /* Sources */,
+				B1326A3B2592AECF009FAC17 /* Frameworks */,
+				B1326A3C2592AECF009FAC17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1326A402592AECF009FAC17 /* PBXTargetDependency */,
+			);
+			name = NotesUITests;
+			productName = NotesUITests;
+			productReference = B1326A3E2592AECF009FAC17 /* NotesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1326A152592AECC009FAC17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					B1326A1C2592AECC009FAC17 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					B1326A322592AECF009FAC17 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = B1326A1C2592AECC009FAC17;
+					};
+					B1326A3D2592AECF009FAC17 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = B1326A1C2592AECC009FAC17;
+					};
+				};
+			};
+			buildConfigurationList = B1326A182592AECC009FAC17 /* Build configuration list for PBXProject "Notes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1326A142592AECC009FAC17;
+			packageReferences = (
+				B1D424452672C07F0016CDF1 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
+			productRefGroup = B1326A1E2592AECC009FAC17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1326A1C2592AECC009FAC17 /* Notes */,
+				B1326A322592AECF009FAC17 /* NotesTests */,
+				B1326A3D2592AECF009FAC17 /* NotesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1326A1B2592AECC009FAC17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1326A282592AECF009FAC17 /* Preview Assets.xcassets in Resources */,
+				B1326A252592AECF009FAC17 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1326A312592AECF009FAC17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1326A3C2592AECF009FAC17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1326A192592AECC009FAC17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B146A7CB25A4D43800DD0820 /* EmailAccountCreationView.swift in Sources */,
+				B111A35325CD01B6005DCA47 /* Account.swift in Sources */,
+				B146A7D525A4F50A00DD0820 /* MainView.swift in Sources */,
+				B1326A2A2592AECF009FAC17 /* Persistence.swift in Sources */,
+				B1FEA9F425A3F84300974997 /* EmailLoginView.swift in Sources */,
+				B111A35D25CD0227005DCA47 /* AppleAccount.swift in Sources */,
+				B1EF72C125BFB1980086CC17 /* SwiftUIResponderListener.swift in Sources */,
+				B111A36225CD0286005DCA47 /* FacebookAccount.swift in Sources */,
+				B1326A232592AECC009FAC17 /* ContentView.swift in Sources */,
+				B16AFF302673B84400EF3038 /* LoginButtons.swift in Sources */,
+				B1C97CA425C7A8A800E585EB /* ViewExtension.swift in Sources */,
+				B111A35825CD01E2005DCA47 /* EmailAccount.swift in Sources */,
+				B1326A212592AECC009FAC17 /* NotesApp.swift in Sources */,
+				B14BACA225AF68FF00EE237E /* TextViewExtension.swift in Sources */,
+				B14BACB525AF84AB00EE237E /* CustomTextField.swift in Sources */,
+				B1326A2D2592AECF009FAC17 /* Notes.xcdatamodeld in Sources */,
+				B146A7D025A4D46100DD0820 /* HeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1326A2F2592AECF009FAC17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1326A382592AECF009FAC17 /* NotesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1326A3A2592AECF009FAC17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1326A432592AECF009FAC17 /* NotesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1326A352592AECF009FAC17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1326A1C2592AECC009FAC17 /* Notes */;
+			targetProxy = B1326A342592AECF009FAC17 /* PBXContainerItemProxy */;
+		};
+		B1326A402592AECF009FAC17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1326A1C2592AECC009FAC17 /* Notes */;
+			targetProxy = B1326A3F2592AECF009FAC17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B1326A452592AECF009FAC17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1326A462592AECF009FAC17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1326A482592AECF009FAC17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Notes/Notes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Notes/Preview Content\"";
+				DEVELOPMENT_TEAM = XDDT3R5V4L;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Notes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.barrios.Notes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1326A492592AECF009FAC17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Notes/Notes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Notes/Preview Content\"";
+				DEVELOPMENT_TEAM = XDDT3R5V4L;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Notes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.barrios.Notes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1326A4B2592AECF009FAC17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XDDT3R5V4L;
+				INFOPLIST_FILE = NotesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.barrios.NotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notes.app/Notes";
+			};
+			name = Debug;
+		};
+		B1326A4C2592AECF009FAC17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XDDT3R5V4L;
+				INFOPLIST_FILE = NotesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.barrios.NotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notes.app/Notes";
+			};
+			name = Release;
+		};
+		B1326A4E2592AECF009FAC17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XDDT3R5V4L;
+				INFOPLIST_FILE = NotesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.barrios.NotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Notes;
+			};
+			name = Debug;
+		};
+		B1326A4F2592AECF009FAC17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XDDT3R5V4L;
+				INFOPLIST_FILE = NotesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.barrios.NotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Notes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1326A182592AECC009FAC17 /* Build configuration list for PBXProject "Notes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1326A452592AECF009FAC17 /* Debug */,
+				B1326A462592AECF009FAC17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1326A472592AECF009FAC17 /* Build configuration list for PBXNativeTarget "Notes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1326A482592AECF009FAC17 /* Debug */,
+				B1326A492592AECF009FAC17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1326A4A2592AECF009FAC17 /* Build configuration list for PBXNativeTarget "NotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1326A4B2592AECF009FAC17 /* Debug */,
+				B1326A4C2592AECF009FAC17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1326A4D2592AECF009FAC17 /* Build configuration list for PBXNativeTarget "NotesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1326A4E2592AECF009FAC17 /* Debug */,
+				B1326A4F2592AECF009FAC17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B1D424452672C07F0016CDF1 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B1D424462672C07F0016CDF1 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1D424452672C07F0016CDF1 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		B1326A2B2592AECF009FAC17 /* Notes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B1326A2C2592AECF009FAC17 /* Notes.xcdatamodel */,
+			);
+			currentVersion = B1326A2C2592AECF009FAC17 /* Notes.xcdatamodel */;
+			path = Notes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B1326A152592AECC009FAC17 /* Project object */;
+}
